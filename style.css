@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    background-image: url(wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.form-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    height: 400px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-field{
+    padding: 40px;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.form-input{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+
+.form-input label{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+    font-size: 0.7em;
+}
+
+.form-input input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 0 5px;
+    color: #fff;
+}
+
+.form-input ion-icon{
+    position: absolute;
+    right: 0px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 10px;
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: .8em;
+    color: #fff;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forget label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: .3s;
+}
+
+button:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.register{
+    font-size: 0.8em;
+    color: #fff;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
